@@ -129,6 +129,7 @@ class _UserInfoPageState extends ConsumerState<UserInfoPage> {
         imageGallery = null;
       });
     } catch (e) {
+      // ignore: use_build_context_synchronously
       showAlertDialog(context: context, message: e.toString());
     }
   }
@@ -177,6 +178,7 @@ class _UserInfoPageState extends ConsumerState<UserInfoPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        // ignore: deprecated_member_use
         backgroundColor: Theme.of(context).backgroundColor,
         elevation: 0,
         title: Text(

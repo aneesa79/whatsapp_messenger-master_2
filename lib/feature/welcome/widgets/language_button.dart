@@ -90,14 +90,14 @@ class LanguageButton extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         splashFactory: NoSplash.splashFactory,
         highlightColor: context.theme.langHightlightColor,
-        child: Padding(
-          padding: const EdgeInsets.symmetric(
+        child: const Padding(
+          padding: EdgeInsets.symmetric(
             horizontal: 16,
             vertical: 8.0,
           ),
           child: Row(
             mainAxisSize: MainAxisSize.min,
-            children: const [
+            children: [
               Icon(
                 Icons.language,
                 color: Coloors.greenDark,
