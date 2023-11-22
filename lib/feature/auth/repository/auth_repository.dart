@@ -177,7 +177,9 @@ class AuthRepository {
         codeAutoRetrievalTimeout: (String smsCodeId) {},
       );
     } on FirebaseAuthException catch (e) {
+      // ignore: use_build_context_synchronously
       Navigator.pop(context);
+      // ignore: use_build_context_synchronously
       showAlertDialog(context: context, message: e.toString());
     }
   }
