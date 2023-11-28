@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:whatsapp_messenger/common/extension/custom_theme_extension.dart';
 import 'package:whatsapp_messenger/common/helper/show_alert_dialog.dart';
 import 'package:whatsapp_messenger/common/widgets/custom_elevated_button.dart';
-import 'package:whatsapp_messenger/feature/auth/controller/auth_controller.dart';
+//import 'package:whatsapp_messenger/feature/auth/controller/auth_controller.dart';
 import 'package:whatsapp_messenger/feature/auth/widgets/custom_text_field.dart';
 
 import '../../../common/utils/coloors.dart';
@@ -25,7 +25,7 @@ class _LoginPageState extends ConsumerState<LoginPage> {
   sendCodeToPhone() {
     final phoneNumber = phoneNumberController.text;
     final countryName = countryNameController.text;
-    final countryCode = countryCodeController.text;
+    //final countryCode = countryCodeController.text;
 
     if (phoneNumber.isEmpty) {
       return showAlertDialog(
@@ -45,11 +45,11 @@ class _LoginPageState extends ConsumerState<LoginPage> {
             "The phone number you entered is too long for the country: $countryName",
       );
     }
-
+/*
     ref.read(authControllerProvider).sendSmsCode(
           context: context,
           phoneNumber: "+$countryCode$phoneNumber",
-        );
+        );*/
   }
 
   showCountryPickerBottomSheet() {

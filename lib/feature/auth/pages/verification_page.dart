@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:whatsapp_messenger/common/extension/custom_theme_extension.dart';
 import 'package:whatsapp_messenger/common/widgets/custom_icon_button.dart';
-import 'package:whatsapp_messenger/feature/auth/controller/auth_controller.dart';
+//import 'package:whatsapp_messenger/feature/auth/controller/auth_controller.dart';
 import 'package:whatsapp_messenger/feature/auth/widgets/custom_text_field.dart';
 
 class VerificationPage extends ConsumerWidget {
@@ -14,7 +14,7 @@ class VerificationPage extends ConsumerWidget {
 
   final String smsCodeId;
   final String phoneNumber;
-
+/*
   void verifySmsCode(
     BuildContext context,
     WidgetRef ref,
@@ -26,7 +26,7 @@ class VerificationPage extends ConsumerWidget {
           smsCode: smsCode,
           mounted: true,
         );
-  }
+  }*/
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -82,9 +82,10 @@ class VerificationPage extends ConsumerWidget {
                 autoFocus: true,
                 keyboardType: TextInputType.number,
                 onChanged: (value) {
+                  /*
                   if (value.length == 6) {
                     return verifySmsCode(context, ref, value);
-                  }
+                  }*/
                 },
               ),
             ),

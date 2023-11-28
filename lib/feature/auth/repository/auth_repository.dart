@@ -115,7 +115,7 @@ class AuthRepository {
       showAlertDialog(context: context, message: e.toString());
     }
   }
-
+/*
   void verifySmsCode({
     required BuildContext context,
     required String smsCodeId,
@@ -144,7 +144,7 @@ class AuthRepository {
       Navigator.pop(context);
       showAlertDialog(context: context, message: e.toString());
     }
-  }
+  }*/
 
   void sendSmsCode({
     required BuildContext context,

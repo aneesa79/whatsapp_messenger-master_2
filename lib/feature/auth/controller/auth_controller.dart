@@ -49,7 +49,7 @@ class AuthController {
       mounted: mounted,
     );
   }
-
+/*
   void verifySmsCode({
     required BuildContext context,
     required String smsCodeId,
@@ -62,7 +62,7 @@ class AuthController {
       smsCode: smsCode,
       mounted: mounted,
     );
-  }
+  }*/
 
   void sendSmsCode({
     required BuildContext context,

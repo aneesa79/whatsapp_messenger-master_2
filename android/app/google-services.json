@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "653780980595",
+    "firebase_url": "https://whatsapp-messenger-677bd-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "whatsapp-messenger-677bd",
     "storage_bucket": "whatsapp-messenger-677bd.appspot.com"
   },
@@ -12,7 +13,16 @@
           "package_name": "com.example.whatsapp_messenger"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "653780980595-njl5ir1nmiidodn5gmpnq1j6vd9kflf3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.whatsapp_messenger",
+            "certificate_hash": "11342a3d27c0a2fae483510fda46293a0db7df72"
+          }
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyClvlfNf5AJhAcx2uGlWgCVuBcsRzSqb4I"
